@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+html,
+body{
+    direction: rtl;
+    font-family: vazirmatn;
+    overflow: hidden;
+}
+ul,li{
+    list-style: none;
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.container{
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: auto;
+}
+.blog-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+}
+@media only screen 
+   and (max-width : 600px) {
+   .blog-section{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+   }
+   #blog-cart{
+    width: 100% !important;
+   }
+}
+#blog-cart-btn{
+    position: absolute !important;
+    bottom: 0 !important;
+    margin-bottom: 5px;
+}
+#blog-cart{
+    position: relative !important;
+    width: 300px;
+    height: 400px;
+}
+#input{
+    width: 80%;
+}
+
+.search-grp{
+    width: 100%;
+    justify-content: space-between;
+}
+
